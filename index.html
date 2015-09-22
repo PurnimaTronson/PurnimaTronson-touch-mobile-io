@@ -37,7 +37,7 @@ $(function(){
   $( "div.character" ).bind( "tap", tapHandler );
  
   function tapHandler( event ){
-	$( event.target ).removeClass("walk-right walk-left");
+	$( event.target ).removeClass("swipe-right swipe-left");
     $( event.target ).addClass( "jump" );
   }
 });
@@ -51,7 +51,7 @@ $(function(){
   // Callback function references the event target and adds the 'swipeleft' class to it
   function swipeleftHandler( event ){
 	$( event.target ).removeClass("swipe-right jump"); 
-    $( event.target ).addClass( "swipeleft" );
+    $( event.target ).addClass( "swipe-left" );
   }
 });
 </script>
@@ -64,7 +64,7 @@ $(function(){
   // Callback function references the event target and adds the 'swiperight' class to it
   function swiperightHandler( event ){
 	  $( event.target ).removeClass("swipe-left jump"); 
-    $( event.target ).addClass( "swiperight" );
+    $( event.target ).addClass( "swipe-right" );
   }
 });
 </script>
